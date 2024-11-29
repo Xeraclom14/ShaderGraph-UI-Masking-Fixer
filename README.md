@@ -1,5 +1,5 @@
 # ShaderGraph-UI-Masking-Fixer
-A fixer for UI Masking ShaderGraph-generated shaders in Unity 2020.x
+A fixer for UI Masking in ShaderGraph-generated shaders for Unity 2020.x
 
 ![usage](https://github.com/user-attachments/assets/6c716b17-9000-4d94-a32a-8f71ce1bb416)
 
@@ -8,7 +8,7 @@ If you're here, you may have noticed that masking doesn't really work when using
 This script adds a few lines to the generated shader code to enable stencil shenanigans, (hopefully) making masking work.
 
 Installation:
-Copy the FBXAnimationClipOrganizer.cs script into Scripts\Editor.
+Copy the ShaderGraphMaskFixer.cs script into Scripts\Editor.
  
 Usage:
 1) To open, go to Window -> ShaderGraph UI Masking Fixer.
@@ -20,7 +20,10 @@ Usage:
 7) Go to each affected material with the old shader and change it for the new, fixed one.
 8) Yep.
 
-Example of a bad shader with masking not working (the icon inside it is a regular sprite, masking works):
+KNOWN ISSUE: Rect Mask 2D still doesnt work for some reason. You're on your own in this one (just use a regular mask).
+Tested and working in 2020.3.40f1, should work on other versions with the same issue.
+
+Example of a bad shade with masking not working (the icon inside it is a regular sprite, masking works):
 ![bad_mask](https://github.com/user-attachments/assets/756f5c68-0012-4683-8029-d970a1257b07)
 
 Example of the same, but fixed shader:
