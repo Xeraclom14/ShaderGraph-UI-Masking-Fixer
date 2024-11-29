@@ -23,7 +23,7 @@ Usage:
 KNOWN ISSUE: Rect Mask 2D still doesnt work for some reason. You're on your own in this one (just use a regular mask).
 Tested and working in 2020.3.40f1, should work on other versions with the same issue.
 
-Example of a bad shade with masking not working (the icon inside it is a regular sprite, masking works):
+Example of a bad shader with masking not working (the icon inside it is a regular sprite, masking works):
 ![bad_mask](https://github.com/user-attachments/assets/756f5c68-0012-4683-8029-d970a1257b07)
 
 Example of the same, but fixed shader:
